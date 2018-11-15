@@ -1,0 +1,87 @@
+/* 
+	CSS 크로스브라우징 
+*/
+/* 
+	텍스트 관련
+*/
+/* 
+	삼각형 만들기 
+*/
+/* 
+	CSS3 효과
+	=====
+	example)
+		elem {
+			.box_shadow(2px 2px 10px rgba(0,0,0,.2));
+		}
+*/
+/* 
+	CSS3 애니메이션 
+	=====
+	example)
+	.keyframes(fade-in;{
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	});
+	.animation(fade-in 0.2s linear infinite alternate)
+*/
+/* 
+	미디어쿼리
+	-----
+	example )
+		elem {
+			@media @mobile {
+				attr : value;
+	    }
+		}
+*/
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+main {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: #000;
+  z-index: 1;
+}
+main h1 {
+  padding: 130px 0 140px;
+  text-align: center;
+  color: #eee;
+}
+.cont {
+  font-family: 'Noto Sans KR', '나눔고딕', "Apple SD Gothic Neo", 'Malgun Gothic', '맑은고딕', arial;
+  width: 100%;
+}
+.cont .contWrap {
+  width: 760px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.cont .contWrap p {
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.7;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+@media only screen and (max-width: 768px) {
+  .cont .contWrap p {
+    padding: 0 20px;
+  }
+}
+.infoBox {
+  width: 50%;
+  float: left;
+}
+.infoBox ul li {
+  font-size: 18px;
+}
+.infoBox ul li em {
+  font-weight: bold;
+  font-style: normal;
+  color: red;
+}
+.infoBox .result {
+  font-size: 20px;
+  font-weight: bold;
+}

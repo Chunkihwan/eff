@@ -1,0 +1,156 @@
+//out: salary.css, compress: false, strictMath: false
+@charset "utf-8"; 
+
+// LESS 기본 변수 모음
+@import 'https://joongang.joins.com/special/common/style/var'; 
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@t_size : 16px; 
+@content-width : 760px;
+@pc_textPadding : 100px;
+
+@image_url : "https://images.joins.com/newsroom/2018/0922_pyongyang";
+// @image_url : "../image";
+
+.noto() { font-family : 'Noto Sans KR', '나눔고딕', "Apple SD Gothic Neo",  'Malgun Gothic', '맑은고딕', arial; }
+
+mark {
+    // background: rgba(96, 189, 164, 0.4);
+    // display: inline-block;
+    // line-height: 0em;
+    // padding-bottom: -10px;
+    // color:#3c3e40;
+    background : none;
+    box-shadow: inset 0 -6px 0 rgba(96, 189, 164, 0.4);
+}
+
+header {
+    position: relative;
+    height: 35px;
+}
+
+main {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    // height: 200px;
+    background: #000;
+    z-index:1;
+    // margin: 0 auto;
+    h1 {
+        padding : 130px 0 140px;
+        text-align: center;
+        color:#eee;
+    }
+}
+
+.cont {
+    .noto();
+    width: 100%;
+    
+    .contWrap {
+        width: @content-width;
+        margin: 0 auto;
+        padding : 50px 0;
+        font-size: @t_size;
+        
+        .subTitle {
+            padding-bottom : 20px;
+        }
+        p {
+            position: relative;
+            font-size: 1rem;
+            // margin: 18px 0 0;
+            line-height: 1.7;
+            word-wrap: break-word;
+            word-break: keep-all; 
+            // text-align: justify;
+            // padding : 0 @pc_textPadding;
+            @media @mobile{
+                padding : 0 20px;
+            }
+        }
+    }
+}
+
+.infoBox {
+    width : 50%;
+    float: left;
+    .clearfix();
+    
+    .mine2 {
+        margin: 12px 0;
+    }
+    input {
+        border : 1px solid #999;
+        padding : 10px 14px;
+        font-size : 1.3rem;
+        margin : 0 6px 20px 0;
+    }
+    button {
+        border : 1px solid #111;
+        background: #333;
+        color: #fff;
+        font-weight: bold;
+        padding : 10px 20px;
+
+        &:hover {
+            background: #111;
+            color: #fff;
+        }
+    }
+
+    ul li {
+        font-size : 18px;
+        line-height: 1.8;
+        em{
+            font-weight : bold;
+            font-style : normal;
+            color: red;
+        }
+    }
+    p.result {
+        font-size : 1.5rem;
+        font-weight : bold;
+    }
+}
+
+
+#bottom {
+	position: relative;
+    width: 100%;
+    padding-top:100px;
+	// .border-box();
+}
+
+.byline {
+	z-index: 2;
+	width: @content-width;
+	margin: 0 auto 20px;
+	.publish {
+		color:#333;
+	}
+	@media @mobile {
+		.publish {
+	    	right: 14px;
+		}
+	}
+}
+
+.other_cont {
+	position: relative;
+	z-index: 2;
+	background: #fff;
+	.center_wrap {
+		max-width:@content-width;
+	}
+	.item:first-child {
+		float: none;
+		margin: 0 auto 2px;
+	}
+}
+
+.comment-wrapper {
+	width: 100%;
+	max-width:@content-width;
+}
